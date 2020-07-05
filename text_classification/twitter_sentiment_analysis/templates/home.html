@@ -1,0 +1,9 @@
+<h1>Twitter Sentiment Analysis</h1>
+<form  method="POST">
+    {# This hidden_tag is a CSRF security feature. #}
+    {{ form.hidden_tag( ) }}
+	
+    {{ form.tweet.label }}    {{form.tweet}}
+
+    {{ form.submit( ) }}
+</form>
